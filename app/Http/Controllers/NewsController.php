@@ -18,7 +18,7 @@ class NewsController extends Controller
     {
         return view('news.index', ['listNews' => $this->listNews]);
     }
-    public function show(int $id)
+    public function show(int $id,)
     {
         $news = $this->listNews[$id] ?? "Not found";
         return view('news.show', ['news' => $news]);
